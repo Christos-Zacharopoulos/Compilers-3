@@ -1,0 +1,291 @@
+rm -f *.class *~
+rm  JavaCharStream.java MiniJavaParser* minijava-jtb.jj Token* ParseException.java
+rm: cannot remove 'JavaCharStream.java': No such file or directory
+rm: cannot remove 'MiniJavaParser*': No such file or directory
+rm: cannot remove 'minijava-jtb.jj': No such file or directory
+rm: cannot remove 'Token*': No such file or directory
+rm: cannot remove 'ParseException.java': No such file or directory
+Makefile:9: recipe for target 'clean' failed
+make: *** [clean] Error 1
+java -jar ./jtb132di.jar -te minijava.jj
+JTB version 1.3.2 DIT@UoA patched
+JTB:  Reading from minijava.jj...
+JTB:  Input file parsed successfully.
+JTB:  "minijava-jtb.jj" generated to current directory.
+JTB:  Syntax tree Java source files generated to directory "syntaxtree".
+
+JTB:  "GJVisitor.java" generated to directory "visitor".
+JTB:  "Visitor.java" generated to directory "visitor".
+JTB:  "GJNoArguVisitor.java" generated to directory "visitor".
+JTB:  "GJVoidVisitor.java" generated to directory "visitor".
+JTB:  "GJDepthFirst.java" generated to directory "visitor".
+JTB:  "DepthFirstVisitor.java" generated to directory "visitor".
+JTB:  "GJNoArguDepthFirst.java" generated to directory "visitor".
+JTB:  "GJVoidDepthFirst.java" generated to directory "visitor".
+
+java -jar ./javacc5.jar minijava-jtb.jj
+Java Compiler Compiler Version 5.0 (Parser Generator)
+(type "javacc" with no arguments for help)
+Reading from file minijava-jtb.jj . . .
+File "TokenMgrError.java" does not exist.  Will create one.
+File "ParseException.java" does not exist.  Will create one.
+File "Token.java" does not exist.  Will create one.
+File "JavaCharStream.java" does not exist.  Will create one.
+Parser generated successfully.
+javac Main.java
+YESY YES
+java Main ./tests/correct/Add.java  ./tests/correct/ArrayTest.java  ./tests/correct/BinaryTree.java  ./tests/correct/BubbleSort.java  ./tests/correct/CallFromSuper.java  ./tests/correct/Classes.java  ./tests/correct/DerivedCall.java  ./tests/correct/Example1.java  ./tests/correct/Factorial.java  ./tests/correct/FieldAndClassConflict.java  ./tests/correct/LinearSearch.java  ./tests/correct/LinkedList.java  ./tests/correct/Main.java  ./tests/correct/ManyClasses.java  ./tests/correct/MoreThan4.java  ./tests/correct/OutOfBounds1.java  ./tests/correct/Overload2.java  ./tests/correct/QuickSort.java  ./tests/correct/ShadowBaseField.java  ./tests/correct/ShadowField.java  ./tests/correct/test06.java  ./tests/correct/test07.java  ./tests/correct/test15.java  ./tests/correct/test17.java  ./tests/correct/test20.java  ./tests/correct/test62.java  ./tests/correct/test73.java  ./tests/correct/test82.java  ./tests/correct/test93.java  ./tests/correct/test99.java  ./tests/correct/TreeVisitor.java
+Test.start : 0
+
+BT.Start : 0
+
+Tree.left : 0
+Tree.right : 8
+Tree.key : 16
+Tree.has_left : 20
+Tree.has_right : 21
+Tree.my_null : 22
+Tree.Init : 0
+Tree.SetRight : 8
+Tree.SetLeft : 16
+Tree.GetRight : 24
+Tree.GetLeft : 32
+Tree.GetKey : 40
+Tree.SetKey : 48
+Tree.GetHas_Right : 56
+Tree.GetHas_Left : 64
+Tree.SetHas_Left : 72
+Tree.SetHas_Right : 80
+Tree.Compare : 88
+Tree.Insert : 96
+Tree.Delete : 104
+Tree.Remove : 112
+Tree.RemoveRight : 120
+Tree.RemoveLeft : 128
+Tree.Search : 136
+Tree.Print : 144
+Tree.RecPrint : 152
+
+BBS.number : 0
+BBS.size : 8
+BBS.Start : 0
+BBS.Sort : 8
+BBS.Print : 16
+BBS.Init : 24
+
+A.foo : 0
+
+
+
+Base.data : 0
+Base.set : 0
+Base.get : 8
+
+A.a : 0
+
+B.b : 4
+
+F.foo : 0
+
+Test1.fielda : 0
+Test1.Start : 0
+
+Fac.ComputeFac : 0
+
+A.A : 0
+A.B : 0
+
+B.A : 0
+
+LS.number : 0
+LS.size : 8
+LS.Start : 0
+LS.Print : 8
+LS.Search : 16
+LS.Init : 24
+
+LL.Start : 0
+
+Element.Age : 0
+Element.Salary : 4
+Element.Married : 8
+Element.Init : 0
+Element.GetAge : 8
+Element.GetSalary : 16
+Element.GetMarried : 24
+Element.Equal : 32
+Element.Compare : 40
+
+List.elem : 0
+List.next : 8
+List.end : 16
+List.Init : 0
+List.InitNew : 8
+List.Insert : 16
+List.SetNext : 24
+List.Delete : 32
+List.Search : 40
+List.GetEnd : 48
+List.GetElem : 56
+List.GetNext : 64
+List.Print : 72
+
+B.aaa : 12
+B.we : 16
+
+ArrayTest.weee : 0
+ArrayTest.wre : 4
+ArrayTest.aaa : 8
+ArrayTest.test : 0
+
+A.data : 0
+A.get : 0
+
+B.set : 8
+
+C.reset : 16
+
+MT4.Start : 0
+MT4.Change : 8
+
+A.run : 0
+
+A.x : 0
+A.x : 0
+
+QS.number : 0
+QS.size : 8
+QS.Start : 0
+QS.Sort : 8
+QS.Print : 16
+QS.Init : 24
+
+A.x : 0
+A.getX : 0
+
+B.x : 4
+
+A.x : 0
+A.foo : 0
+A.get : 8
+
+Operator.op1bool : 0
+Operator.op2bool : 1
+Operator.op1int : 2
+Operator.op2int : 6
+Operator.result : 10
+Operator.compute : 0
+
+Operator.op1bool : 0
+Operator.op2bool : 1
+Operator.op1int : 2
+Operator.op2int : 6
+Operator.result : 10
+Operator.compute : 0
+
+Test.i : 0
+Test.k : 4
+Test.start : 0
+Test.mutual1 : 8
+Test.mutual2 : 16
+
+Test.i : 0
+Test.start : 0
+Test.first : 8
+Test.second : 16
+
+A23.i1 : 0
+A23.i2 : 4
+A23.i3 : 8
+A23.init : 0
+A23.getI1 : 8
+A23.setI1 : 16
+
+B23.i1 : 12
+B23.i4 : 16
+
+C23.i1 : 20
+C23.i5 : 24
+
+Test.test : 0
+Test.start : 0
+
+Test.start : 0
+
+Test.test : 0
+Test.b : 8
+Test.start : 0
+Test.next : 8
+
+Test.test : 0
+Test.i : 8
+Test.start : 0
+Test.next : 8
+
+Test.test : 0
+Test.i : 8
+Test.start : 0
+Test.next : 8
+
+TV.Start : 0
+
+Visitor.l : 0
+Visitor.r : 8
+Visitor.visit : 0
+
+Tree.left : 0
+Tree.right : 8
+Tree.key : 16
+Tree.has_left : 20
+Tree.has_right : 21
+Tree.my_null : 22
+Tree.Init : 0
+Tree.SetRight : 8
+Tree.SetLeft : 16
+Tree.GetRight : 24
+Tree.GetLeft : 32
+Tree.GetKey : 40
+Tree.SetKey : 48
+Tree.GetHas_Right : 56
+Tree.GetHas_Left : 64
+Tree.SetHas_Left : 72
+Tree.SetHas_Right : 80
+Tree.Compare : 88
+Tree.Insert : 96
+Tree.Delete : 104
+Tree.Remove : 112
+Tree.RemoveRight : 120
+Tree.RemoveLeft : 128
+Tree.Search : 136
+Tree.Print : 144
+Tree.RecPrint : 152
+Tree.accept : 160
+
+
+NOPE NO
+java Main ./tests/error/BadAssign2.java   ./tests/error/BadAssign.java   ./tests/error/BubbleSort-error.java   ./tests/error/Classes-error.java   ./tests/error/DoubleDeclaration1.java   ./tests/error/DoubleDeclaration4.java   ./tests/error/DoubleDeclaration6.java   ./tests/error/Factorial-error.java   ./tests/error/LinearSearch-error.java   ./tests/error/LinkedList-error.java   ./tests/error/MoreThan4-error.java   ./tests/error/NoMatchingMethod.java   ./tests/error/NoMethod.java   ./tests/error/Overload1.java   ./tests/error/QuickSort-error.java   ./tests/error/test18.java   ./tests/error/test21.java   ./tests/error/test35.java   ./tests/error/test52.java   ./tests/error/test68.java   ./tests/error/TreeVisitor-error.java   ./tests/error/UseArgs.java
+Type of <b> is B and <a> are not the same.
+Type of <a> is A and <i> are not the same.
+Invalid right side of assignment.
+Method overload is not allowed. Check arguments of method <get>
+Variable <x> has already been deifned.
+Class <A> has already been defined!
+Method <foo> has already been defined!
+Invalid TIMES( * ) expression. Must be between integers but have: left <num>, right <boolean>.
+Type of <number> is int and <int[]> are not the same.
+Method overload is not allowed. Defined and actual return types are different. Check  method <SetNext>.
+Wrong number of arguments for <Change>.
+Method overload is not allowed.
+Method <foo> is not defined.
+Method <foo> has already been defined!
+Invalid left-hand side type. Expected type to be int[] or boolean[].
+Invalid left-hand side type. Expected type to be int[] or boolean[].
+Intex of array <op> should be int.
+Invalid print expression. Expected type to be boolean or int but have <test>.
+Type of <result> is boolean and <op> are not the same.
+Method overload is not allowed. Defined and actual return types are different. Check  method <next>.
+Type of <r> is null and <Tree> are not the same.
+Type of <i> is int and <args> are not the same.
+rm -f *.class *~
+rm  JavaCharStream.java MiniJavaParser* minijava-jtb.jj Token* ParseException.java
+rm -rf syntaxtree/ visitor/
